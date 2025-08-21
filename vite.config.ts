@@ -19,6 +19,11 @@ export default defineConfig({
       }
     })
   ],
+  server: {
+    proxy: {
+      '/api': 'http://localhost:3000', // Nitro dev-port
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
