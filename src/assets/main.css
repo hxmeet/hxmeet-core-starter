@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+@import "../../node_modules/hxmeet-core-component/src/assets/main.css";
+@source "../../node_modules/hxmeet-core-component/src";
