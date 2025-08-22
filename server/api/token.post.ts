@@ -18,6 +18,5 @@ export default defineEventHandler(async (event) => {
   at.addGrant({ roomJoin: true, room: body.roomName, roomCreate: false, canUpdateOwnMetadata: true});
   const token = await at.toJwt();
 
-
-  return { msg: 'Hello from Nitro! - ' + token }
+  return { token }
 })
