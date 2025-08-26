@@ -3,20 +3,20 @@
     <UCard class="mt-32">
       <div class="font-bold mb-3">HxMeet - Video conferencing</div>
       <div>
-        Das ist das Starter-Projekt zu
+        This is the starter project of
         <a href="https://github.com/hxmeet/hxmeet-core-component" class="underline" target="_blank">HxMeet-Core-Component</a>
-        und zeigt die Verwendung der HxMeeting-Komponente.
+        and shows the usage of the component <i>HxMeeting</i> in a Vue.js project.
       </div>
       <div class="my-8">
         <UFormField label="Name" required>
           <UInput v-model="name" placeholder="Enter your participant name" class="w-full" />
         </UFormField>
         <div class="my-8">
-          <UButton :loading="loading" size="xl" @click="startMeeting" block>Meeting starten</UButton>
+          <UButton :loading="loading" size="xl" @click="startMeeting" block>Start meeting</UButton>
         </div>
       </div>
       <div>
-        Um an einem existierenden Meeting teilnehmen zu können benötigen Sie den Teilnahme-Link.
+        You need the participant link to join an existing meeting.
       </div>
     </UCard>
   </UContainer>
