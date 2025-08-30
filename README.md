@@ -1,33 +1,76 @@
-# hxmeet-core-starter
+# HxMeet Core Starter
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is the starter or the showcase project of the `<HxMeet>` component.
+It is open-source, allowing the creation of custom, tailored conferencing solutions.
 
-## Recommended IDE Setup
+## Live Demo
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+👉 Try it out at: [https://hxmeet.io](https://hxmeet.io)
 
-## Type Support for `.vue` Imports in TS
+## Screenshot
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+![HxMeet Screenshot](https://hxmeet.io/changelog/roundtable_1.jpg)
 
-## Customize configuration
+## ✨ Conferencing Features
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- Low-latency WebRTC video & audio
+- Screen sharing
+- Chat
+- Different layout options
+- Participant list
+- Media controls (mute, camera off)
+- Support keyboard shortcuts
+- Dark mode
+- Mobile friendly
 
-## Project Setup
+## 🛠️ Developer options
 
-```sh
-npm install
+- Themable (set your own color schema)
+- Embeddable in your app or website
+- Customizable
+    - Hook into the component events
+    - Add extensions
+- Add test participants
+- Open-source (MIT license)
+
+## Installation ans starting
+
+### Requirements
+- [Node.js](https://nodejs.org/) (v22 recommended)
+- [npm](https://www.npmjs.com/)
+- [LiveKit](https://livekit.io) account (later you can switch to an self-hosted livekit solution)
+
+### Starting
+
+The project contains a simple start page where you enter your participant name and start a conference.
+
+1. Checkout project and install dependencies: `npm install`
+2. Copy the `.env.example` file to `.env`
+3. Enter your LiveKit API data there:
+
+```bash
+# ----------------------------------------
+# Client side variables
+# ----------------------------------------
+# Livekit-Cloud: Go to 'Settings/Project' and take the 'Project URL'
+VITE_LIVEKIT_URL=<your-livekit-url>
+
+# ----------------------------------------
+# Server side variables
+# ----------------------------------------
+NITRO_LIVEKIT_SERVICE_URL=<your-livekit-url>
+NITRO_LIVEKIT_API_KEY=<your-livekit-api-key>
+NITRO_LIVEKIT_SECRET=<your-livekit-secret>
 ```
 
-### Compile and Hot-Reload for Development
+> **Note:**  The VITE_LIVEKIT_URL is the Livekit project URL (starts with _wss://_) and the NITRO_LIVEKIT_SERVICE_URL is the same but starts with `https://` 
+> and the NITRO_LIVEKIT_API_KEY and the NITRO_LIVEKIT_SECRET can you find in _Settings/API-Keys_ (create an API-Key)
 
-```sh
-npm run dev
-```
+4. Start the test page: `npm run dev`
+5. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-### Type-Check, Compile and Minify for Production
+To invite other participants, you can share the URL (the path starts with `/room/`) with them.
 
-```sh
-npm run build
-```
+## License
+
+Licensed under the MIT License.
