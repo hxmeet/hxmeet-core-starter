@@ -5,7 +5,8 @@ It is open-source, allowing the creation of custom, tailored conferencing soluti
 
 > [!NOTE]
 > This is a vuejs project based on [hxmeet-core-starter](https://github.com/hxmeet/hxmeet-core-starter) and it contains
-> a server function (build with nitro) to create a livekit tokens.
+> a server function (build with nitro) to create the livekit tokens, because the API keys and secrets should not shared 
+> on the client side.
 
 ## Live Demo
 
