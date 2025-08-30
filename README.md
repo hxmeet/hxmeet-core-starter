@@ -3,6 +3,10 @@
 This project is the starter or the showcase project of the `<HxMeet>` component.
 It is open-source, allowing the creation of custom, tailored conferencing solutions.
 
+> [!NOTE]
+> This is a vuejs project based on [hxmeet-core-starter](https://github.com/hxmeet/hxmeet-core-starter) and it contains
+> a server function (build with nitro) to create a livekit tokens.
+
 ## Live Demo
 
 👉 Try it out at: [https://hxmeet.io](https://hxmeet.io)
@@ -58,17 +62,12 @@ VITE_LIVEKIT_URL=<your-livekit-url>
 # ----------------------------------------
 # Server side variables
 # ----------------------------------------
+# Livekit-Cloud: Go to 'Settings/API-Keys' and create an 'API Key'
+# The NITRO_LIVEKIT_SERVICE_URL is the same as the VITE_LIVEKIT_URL but starts with 'https://'
 NITRO_LIVEKIT_SERVICE_URL=<your-livekit-url>
 NITRO_LIVEKIT_API_KEY=<your-livekit-api-key>
 NITRO_LIVEKIT_SECRET=<your-livekit-secret>
 ```
-
-> [!NOTE] 
-> The VITE_LIVEKIT_URL is the Livekit project URL (starts with _wss://_) and the NITRO_LIVEKIT_SERVICE_URL is the same but starts with `https://` 
-> and the NITRO_LIVEKIT_API_KEY and the NITRO_LIVEKIT_SECRET can you find in _Settings/API-Keys_ (create an API-Key)
-
-> [!NOTE]
-> The VITE_LIVEKIT_URL is the Livekit project URL (starts with _wss://_) and the NITRO_LIVEKIT_SERVICE_URL is the same but starts with `https://` 
 
 4. Start the test page: `npm run dev`
 5. Open [http://localhost:5173](http://localhost:5173) in your browser
