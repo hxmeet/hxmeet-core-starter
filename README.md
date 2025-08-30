@@ -63,8 +63,12 @@ NITRO_LIVEKIT_API_KEY=<your-livekit-api-key>
 NITRO_LIVEKIT_SECRET=<your-livekit-secret>
 ```
 
-> **Note:**  The VITE_LIVEKIT_URL is the Livekit project URL (starts with _wss://_) and the NITRO_LIVEKIT_SERVICE_URL is the same but starts with `https://` 
+> [!NOTE] 
+> The VITE_LIVEKIT_URL is the Livekit project URL (starts with _wss://_) and the NITRO_LIVEKIT_SERVICE_URL is the same but starts with `https://` 
 > and the NITRO_LIVEKIT_API_KEY and the NITRO_LIVEKIT_SECRET can you find in _Settings/API-Keys_ (create an API-Key)
+
+> [!NOTE]
+> The VITE_LIVEKIT_URL is the Livekit project URL (starts with _wss://_) and the NITRO_LIVEKIT_SERVICE_URL is the same but starts with `https://` 
 
 4. Start the test page: `npm run dev`
 5. Open [http://localhost:5173](http://localhost:5173) in your browser
