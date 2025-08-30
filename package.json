@@ -21,7 +21,7 @@
   "dependencies": {
     "@nuxt/ui": "^3.3.0",
     "h3": "^1.15.4",
-    "hxmeet-core-component": "^0.0.3",
+    "hxmeet-core-component": "^0.0.4",
     "livekit-server-sdk": "^2.13.2",
     "ofetch": "^1.4.1",
     "uuid": "^11.1.0",
